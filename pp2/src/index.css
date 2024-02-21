@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600;1,700&display=swap");
+
+*, body {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --bodytext-2: Urbanist;
+
+  /* font sizes */
+  --label-2-size: 16px;
+  --label-1-size: 18px;
+  --bodytext-2-size: 20px;
+  --font-size-21xl: 40px;
+  --font-size-xs: 12px;
+  --font-size-13xl: 32px;
+  --bodytext-1-size: 24px;
+  --font-size-9xl: 28px;
+  --font-size-29xl: 48px;
+
+  /* Colors */
+  --foundation-white: #f9f9fe;
+  --foundation-blue-light: #eaebf5;
+  --foundation-blue-normal: #29339b;
+  --color-midnightblue-100: #121746;
+  --foundation-orange-normal: #fb983c;
+  --foundation-neutral-black-neutral-black-100: #b1b0ba;
+  --foundation-blue-light-active: #bdc0e0;
+  --foundation-neutral-black-neutral-black-200: #8b8a99;
+  --foundation-blue-light-hover: #dfe0f0;
+  --foundation-neutral-black-neutral-black-400: #35344e;
+  --foundation-blue-darker: #0e1236;
+  --foundation-neutral-black-neutral-black-500: #020122;
+  --color-dimgray: #55556b;
+  --color-white: #fff;
+  --foundation-neutral-black-neutral-black-50: #e6e6e9;
+
+  /* Gaps */
+  --gap-5xs: 8px;
+  --gap-0: 0px;
+  --gap-xl: 20px;
+  --gap-13xl: 32px;
+  --gap-xs: 12px;
+  --gap-12xs: 1px;
+  --gap-9xs: 4px;
+  --gap-11xs: 2px;
+  --gap-base: 16px;
+  --gap-29xl: 48px;
+  --gap-21xl: 40px;
+  --gap-sm: 14px;
+
+  /* Paddings */
+  --padding-11xs: 2px;
+  --padding-mini: 15px;
+  --padding-xl: 20px;
+  --padding-xs: 12px;
+  --padding-base: 16px;
+  --padding-13xl: 32px;
+  --padding-5xl: 24px;
+  --padding-3xs: 10px;
+
+  /* Border radiuses */
+  --br-9xs: 4px;
+  --br-5xs: 8px;
+  --br-5xl: 24px;
+  --br-31xl: 50px;
+  --br-11xl: 30px;
+  --br-xl: 20px;
+  --br-21xl: 40px;
+}
