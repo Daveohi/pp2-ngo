@@ -1,9 +1,59 @@
 import { memo } from "react";
+import "../Styles/SignUpNgo.css";
 import "../Styles/SignUpNgo2.css";
-// import "../Styles/SignUpNgo.css"
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+// import Country from "../Component/CountrySelector";
+import "../Styles/SignUpNgo.css"
 import Holdhands from "../assets/Images/Holding Hands.png";
+// import CountrySelector from "../Component/CountrySelector";
 
 const SignUpNgo = memo(() => {
+  const navigate = useNavigate();
+
+  const [country, setCountry] = useState("");
+  const [state, setState] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+
+  // Function to handle input change for organisation name
+  const handleCountry = (e) => {
+    setCountry(e.target.value);
+  };
+  // Function to handle input change for email
+  const handleState = (e) => {
+    setState(e.target.value);
+  };
+  // Function to handle input change for phone number
+  const handlePassword = (e) => {
+    setPassword(e.target.value);
+    
+  };
+  // Function to handle input change for CAC number
+  const handleConfirmPassword = (e) => {
+    setConfirmPassword(e.target.value);
+    
+  };
+
+  // Function to handle clicking the next button
+  const handleSignUpClick = () => {
+    if (!password || !confirmPassword) {
+      alert("Please enter both password and confirm password");
+      return;
+    }
+    if (password !== confirmPassword) {
+      alert("Passwords do not match");
+      return;
+    }
+    if (country && state && password && confirmPassword) {
+      navigate("/dashborad");
+      alert("Sign up successfull");
+    } else {
+      // Display error message or prevent navigation
+      alert("Please fill in all fields");
+    }
+  };
+
   return (
     <form
       className="sign-up-ngo-desktop-2"
@@ -28,12 +78,15 @@ const SignUpNgo = memo(() => {
                   <div className="inputs-1">
                     <label className="country">Country</label>
                     <div className="input-fill">
-                      <img
-                        className="profle-2-icon"
-                        alt=""
-                        src="/profle-2.svg"
+                      
+                      <input
+                        type="text"
+                        className="type-your-name"
+                        placeholder="Nigeria"
+                        value={country}
+                        onChange={handleCountry}
                       />
-                      <input type="text" className="type-your-name" placeholder="Nigeria"/>
+                     
                       <img
                         className="dropdown-icon"
                         alt=""
@@ -44,12 +97,14 @@ const SignUpNgo = memo(() => {
                   <div className="inputs-1">
                     <label className="country">State</label>
                     <div className="input-fill">
-                      <img
-                        className="profle-2-icon"
-                        alt=""
-                        src="/profle-2.svg"
+                      
+                      <input
+                        type="text"
+                        className="type-your-name"
+                        placeholder="Lagos"
+                        value={state}
+                        onChange={handleState}
                       />
-                      <input className="type-your-name" placeholder="Lagos" />
                       <img
                         className="dropdown-icon"
                         alt=""
@@ -60,16 +115,28 @@ const SignUpNgo = memo(() => {
                   <div className="inputs-1">
                     <label className="country">Password</label>
                     <div className="input-fill">
-                      <img className="profle-2-icon" alt="" src="/email.svg" />
-                    <input type="password" className="type-your-name" placeholder="Password" />
+                      
+                      <input
+                        type="password"
+                        className="type-your-name"
+                        placeholder="Password"
+                        value={password}
+                        onChange={handlePassword}
+                      />
                       <img className="dropdown-icon" alt="" src="/see.svg" />
                     </div>
                   </div>
                   <div className="inputs-1">
                     <label className="country">Confirm Password</label>
                     <div className="input-fill">
-                      <img className="profle-2-icon" alt="" src="/email.svg" />
-                    <input type="password" className="type-your-name" placeholder="Confirm Password" />
+                     
+                      <input
+                        type="password"
+                        className="type-your-name"
+                        placeholder="Confirm Password"
+                        value={confirmPassword}
+                        onChange={handleConfirmPassword}
+                      />
                       <img className="see-icon1" alt="" src="/see@2x.png" />
                     </div>
                   </div>
@@ -79,8 +146,8 @@ const SignUpNgo = memo(() => {
                   <span className="fund">terms and privacy policy</span>
                 </div>
               </div>
-              <button className="button13">
-                <img className="home-icon7" alt="" src="/home.svg" />
+              <button className="button13" onClick={handleSignUpClick}>
+                {/* <img className="home-icon7" alt="" src="/home.svg" /> */}
                 <div className="button3">Sign up</div>
                 <img className="home-icon7" alt="" src="/right-arrow.svg" />
               </button>
@@ -99,8 +166,8 @@ const SignUpNgo = memo(() => {
           </div>
           <div className="slider">
             <div className="rectangle-parent">
-              <div className="rectangle-div" />
-              <div className="frame-child8" />
+              {/* <div className="rectangle-div" /> */}
+              {/* <div className="frame-child8" /> */}
             </div>
             <div className="step-2-of">Step 2 of 2</div>
           </div>

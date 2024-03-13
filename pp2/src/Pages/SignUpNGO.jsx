@@ -1,4 +1,7 @@
 import react, { useState } from "react";
+import Profile from "../assets/Images/Profile 1.png";
+import Email from "../assets/Images/Email.png";
+import Call from "../assets/Images/Call.png";
 // import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import "../Styles/SignUpNgo.css";
@@ -24,10 +27,19 @@ const SignUpNgoPage = () => {
   // Function to handle input change for phone number
   const handlePhoneNumberChange = (e) => {
     setPhoneNumber(e.target.value);
+    const phoneRegex = /^\d{11}$/;
+
+    if (phoneRegex.test(value) || value === "") {
+      setPhoneNumber(value);
+    }
   };
   // Function to handle input change for CAC number
   const handleCacNumberChange = (e) => {
     setCacNumber(e.target.value);
+    const regex = /^[A-Z0-9]*$/;
+    if (regex.test(value) || value === "") {
+      setInputValue(value.toUpperCase()); // Convert to uppercase
+    }
   };
   // Function to handle input change for area of interest
   const handleAreaOfInterestChange = (e) => {
@@ -46,13 +58,9 @@ const SignUpNgoPage = () => {
       navigate("/signupngo2");
     } else {
       // Display error message or prevent navigation
-      alert("Please fill in all fields and agree to terms.");
+      alert("Please fill in all fields");
     }
   };
-
-  //   const onSignUpNGODesktop1Click = useCallback(() => {
-  //     navigate("/sign-up-ngo-desktop-2");
-  //   }, [navigate]);
 
   return (
     <div className="sign-up-ngo-desktop-1">
@@ -60,9 +68,9 @@ const SignUpNgoPage = () => {
       <div className="sign-up-container1">
         <div className="container2">
           <div className="create-account1">
-            <i className="fundngo3">
+            <i className="fundngo">
               <span>Fund</span>
-              <span className="ngo3">NGO</span>
+              <span className="ngo">NGO</span>
             </i>
             <div className="create-your-account1">Create your account</div>
           </div>
@@ -75,7 +83,7 @@ const SignUpNgoPage = () => {
                       Organisation Name
                     </label>
                     <div className="input-fill4">
-                      <img className="call-icon" alt="" src="/profle-2.svg" />
+                      <img className="call-icon" alt="" src={Profile} />
                       <input
                         type="name"
                         className="type-your-name4"
@@ -83,17 +91,13 @@ const SignUpNgoPage = () => {
                         value={organisationName}
                         onChange={handleOrganisationNameChange}
                       />
-                      <img
-                        className="dropdown-icon2"
-                        alt=""
-                        src="/dropdown.svg"
-                      />
+                     
                     </div>
                   </div>
                   <div className="inputs-11">
                     <label className="email-address">Email Address</label>
                     <div className="input-fill4">
-                      <img className="call-icon" alt="" src="/email.svg" />
+                      <img className="call-icon" alt="" src={Email} />
                       <input
                         type="Email"
                         className="type-your-name4"
@@ -101,17 +105,13 @@ const SignUpNgoPage = () => {
                         value={email}
                         onChange={handleEmailChange}
                       />
-                      <img
-                        className="dropdown-icon2"
-                        alt=""
-                        src="/dropdown.svg"
-                      />
+                      
                     </div>
                   </div>
                   <div className="inputs-11">
                     <label className="organisation-name">Phone Number</label>
                     <div className="input-fill4">
-                      <img className="call-icon" alt="" src="/call.svg" />
+                      <img className="call-icon" alt="" src={Call} />
                       <input
                         type="number"
                         className="type-your-name4"
@@ -119,25 +119,21 @@ const SignUpNgoPage = () => {
                         value={phoneNumber}
                         onChange={handlePhoneNumberChange}
                       />
-                      <img
-                        className="dropdown-icon2"
-                        alt=""
-                        src="/dropdown.svg"
-                      />
+                      
                     </div>
                   </div>
                   <div className="inputs-11">
                     <label className="organisation-name">CAC Number </label>
                     <div className="input-fill4">
-                      <img className="dropdown-icon2" alt="" src="/email.svg" />
+                      {/* <img className="dropdown-icon2" alt="" src="" /> */}
                       <input
-                        type="number"
+                        type="characters"
                         className="type-your-name4"
                         placeholder="IT234567"
                         value={cacNumber}
                         onChange={handleCacNumberChange}
                       />
-                      <img className="dropdown-icon2" alt="" src="/see.svg" />
+                     
                     </div>
                   </div>
                   <div className="inputs-11">
@@ -145,7 +141,7 @@ const SignUpNgoPage = () => {
                       Area of interest
                     </label>
                     <div className="input-fill4">
-                      <img className="dropdown-icon2" alt="" src="/email.svg" />
+                      
                       <input
                         type="text"
                         className="type-your-name4"
@@ -153,10 +149,11 @@ const SignUpNgoPage = () => {
                         value={areaOfInterest}
                         onChange={handleAreaOfInterestChange}
                       />
-                      <img className="call-icon" alt="" src="/dropdown.svg" />
+                      
                     </div>
                   </div>
                 </div>
+                
                 <div className="by-signing-up-container1">
                   <span>{`By signing up, you agree to our `}</span>
                   <span className="terms-and-privacy1">

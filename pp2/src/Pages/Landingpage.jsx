@@ -1,5 +1,6 @@
 import { useCallback } from "react";
 import "../Styles/LandingPage.css";
+// import "../Styles/PhoneLandingPage.css";
 import Dad from "../assets/Images/dad & son.png";
 import Children from "../assets/Images/children.png";
 import Children2 from "../assets/Images/children 2.png";
@@ -17,10 +18,10 @@ import F52 from "../assets/Images/F52.png";
 import F53 from "../assets/Images/F53.png";
 import Vector1 from "../assets/Images/Vector 1.png";
 import Vector2 from "../assets/Images/Vector 2.png";
-import Video1 from "../assets/Images/Video1.png";
-import Video2 from "../assets/Images/Video2.png";
-import Video3 from "../assets/Images/Video3.png";
-import Video4 from "../assets/Images/Video4.png";
+// import Video1 from "../assets/Images/Video1.png";
+// import Video2 from "../assets/Images/Video2.png";
+// import Video3 from "../assets/Images/Video3.png";
+// import Video4 from "../assets/Images/Video4.png";
 import groupicon1 from "../assets/Images/Write_Icon.png";
 import groupicon2 from "../assets/Images/Paste_Icon.png";
 import groupicon3 from "../assets/Images/Team_Icon.png";
@@ -72,12 +73,15 @@ const LandingPage = () => {
             </div>
             <div className="button-parent">
               <div className="button">
-                <img className="home-icon" alt="" src="/home.svg" />
+                <img className="home-icon" alt="" src="" />
                 <button className="button1">Log in</button>
                 <img className="home-icon" alt="" src="/right-arrow.svg" />
               </div>
-              <Link className="button2" to="/getstarted">
-                {/* <img className="home-icon" alt="" src="/home.svg" /> */}
+              <Link
+                className="button2"
+                to="/getstarted"
+                style={{ textDecoration: "none" }}
+              >
                 <button className="button3">Create account</button>
                 <img className="home-icon" alt="" src="/right-arrow.svg" />
               </Link>
@@ -103,14 +107,14 @@ const LandingPage = () => {
         </div>
       </div>
       <div className="frame-group">
-        <img className="frame-child" alt="" src="/frame-23@2x.png" />
-        <img className="frame-child" alt="" src="/frame-23@2x.png" />
+        <img className="frame-child" alt="" src="" />
+        <img className="frame-child" alt="" src="" />
         <img className="frame-child" alt="Dad & son" src={Dad} />
         <img className="frame-icon" alt="" src={Children} />
         <img className="frame-child" alt="" src={Children2} />
         <img className="frame-child" alt="" src={Face} />
-        <img className="frame-child" alt="" src="/frame-25@2x.png" />
-        <img className="frame-child" alt="" src="/frame-25@2x.png" />
+        <img className="frame-child" alt="" src="" />
+        <img className="frame-child" alt="" src="" />
       </div>
       <div className="frame-container">
         <img className="frame-child5" alt="" src={Hands} />
@@ -381,43 +385,45 @@ const LandingPage = () => {
           <img className="icoutline-add-icon" alt="" src={Add} />
         </div>
       </div>
+      <br />
+
       <div className="landing-page-child">
-        <div className="frame-parent11">
-          <div className="who-can-use-fundngo-wrapper">
+        <div className="frame-parent10">
+          <div className="how-does-fundngo-works-wrapper">
             <div className="for-verified-ngos">Who can use FundNGO?</div>
           </div>
           <img className="icoutline-add-icon" alt="" src={Add} />
         </div>
       </div>
+
       <div className="landing-page-inner1">
-        <div className="frame-parent12">
-          <div className="who-can-use-fundngo-wrapper">
-            <div className="who-can-use-fundngo-wrapper">
-              <div className="for-verified-ngos">Is my donation secure?</div>
-            </div>
+        <div className="frame-parent10">
+          <div className="how-does-fundngo-works-wrapper">
+            <div className="for-verified-ngos">Is my donation secure?</div>
           </div>
           <img className="icoutline-add-icon" alt="" src={Add} />
         </div>
       </div>
+      
       <div className="frame-parent13">
         <div className="phplay-fill-wrapper">
           <div className="phplay-fill">
-            <img className="vector-icon4" alt="" src={Video1} />
+            <img className="vector-icon4" alt="" src="" />
           </div>
         </div>
         <div className="phplay-fill-container">
           <div className="phplay-fill">
-            <img className="vector-icon4" alt="" src={Video2} />
+            <img className="vector-icon4" alt="" src="" />
           </div>
         </div>
         <div className="phplay-fill-frame">
           <div className="phplay-fill">
-            <img className="vector-icon4" alt="" src={Video3} />
+            <img className="vector-icon4" alt="" src="" />
           </div>
         </div>
         <div className="phplay-fill-wrapper1">
           <div className="phplay-fill">
-            <img className="vector-icon4" alt="" src={Video4} />
+            <img className="vector-icon4" alt="" src="" />
           </div>
         </div>
       </div>
@@ -433,7 +439,7 @@ const LandingPage = () => {
         </div>
       </div>
       <div className="frame-parent14">
-        <img className="frame-child8" alt="" src={F51} />
+        <img className="frame-c8" alt="" src={F51} />
         <div className="jan-3-2024-parent">
           <div className="for-verified-ngos">Jan 3, 2024</div>
           <div className="empowering-change-how">
@@ -443,7 +449,7 @@ const LandingPage = () => {
         </div>
       </div>
       <div className="frame-parent15">
-        <img className="frame-child8" alt="" src={F52} />
+        <img className="frame-c8" alt="" src={F52} />
         <div className="jan-3-2024-group">
           <div className="for-verified-ngos">Jan 3, 2024</div>
           <div className="impact-from-the">
@@ -452,7 +458,7 @@ const LandingPage = () => {
         </div>
       </div>
       <div className="frame-parent16">
-        <img className="frame-child8" alt="" src={F53} />
+        <img className="frame-c8" alt="" src={F53} />
         <div className="jan-3-2024-group">
           <div className="for-verified-ngos">Jan 3, 2024</div>
           <div className="navigating-the-world">
@@ -523,7 +529,7 @@ const LandingPage = () => {
             <div className="for-verified-ngos">Type your message</div>
             <div className="input-fill1">
               <img className="email-icon" alt="" />
-              <input
+              <textarea
                 className="type-your-name"
                 type="text"
                 placeholder="Send a message"
@@ -630,32 +636,16 @@ const LandingPage = () => {
               <img className="vector-icon8" alt="" src={Twitter} />
             </div>
             <div className="pajamastwitter">
-              <img
-                className="iconoirfacebook"
-                alt=""
-                src={Facebook}
-              />
+              <img className="iconoirfacebook" alt="" src={Facebook} />
             </div>
             <div className="pajamastwitter">
-              <img
-                className="iconoirfacebook"
-                alt=""
-                src={Linkedin}
-              />
+              <img className="iconoirfacebook" alt="" src={Linkedin} />
             </div>
             <div className="pajamastwitter">
-              <img
-                className="iconoirfacebook"
-                alt=""
-                src={Tiktok}
-              />
+              <img className="iconoirfacebook" alt="" src={Tiktok} />
             </div>
             <div className="pajamastwitter">
-              <img
-                className="iconoirfacebook"
-                alt=""
-                src={Instagram}
-              />
+              <img className="iconoirfacebook" alt="" src={Instagram} />
             </div>
           </div>
         </div>

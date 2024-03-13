@@ -7,15 +7,6 @@
     object-fit: cover;
 }
 
-/* .ngo3 {
-    color: var(--foundation-orange-normal);
-} */
-
-/* .fundngo3 {
-    position: relative;
-    font-weight: 700;
-} */
-
 .create-your-account1 {
     position: relative;
     font-size: var(--font-size-13xl);
@@ -39,15 +30,20 @@
 .type-your-name4 {
     position: relative;
     font-weight: 600;
+    width: 430px;
+    border: none;
+    outline: none;
+    background-color: #f9f9f9;
 }
 
-.type-your-name4 {
+.type-your-name {
     flex: 1;
     font-weight: 500;
     border: none;
-    background-color: #f9f9f9;
+    
     line-height: 26px;
     outline: none;
+    
 }
 
 .dropdown-icon2 {
@@ -125,7 +121,7 @@
     font-size: 14px;
     font-weight: 500;
     color: var(--foundation-neutral-black-neutral-black-400);
-    line-height: 16.8px;
+    line-height: 36.8px;
 }
 
 .input-container-group {
@@ -200,26 +196,27 @@
 
 .frame-child11,
 .frame-child12 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: var(--br-81xl);
-    background-color: var(--color-gainsboro-100);
-    width: 430px;
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
+    /* border-radius: var(--br-81xl); */
+    /* background-color: var(--color-gainsboro-100); */
+    /* width: 430px; */
     height: 8px;
 }
 
-.frame-child12 {
-    background-color: var(--color-lightgreen);
-    width: 215px;
-}
+/* .frame-child12::before { */
+    /* background-color: var(--color-lightgreen); */
+    /* width: 50%; */
+/* } */
 
 .rectangle-container {
     width: 430px;
     position: relative;
     height: 8px;
-    min-width: 398px;
-    max-width: 430px;
+    /* min-width: 199px; */
+    max-width: 215px;
+    background-color: green;
 }
 
 .step-1-of {

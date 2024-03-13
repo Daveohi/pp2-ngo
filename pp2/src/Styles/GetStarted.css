@@ -5,6 +5,7 @@
 
 .log-in {
     top: 26px;
+    text-align: end;
     left: 225px;
     font-size: var(--bodytext-2-size);
     font-weight: 600;
@@ -186,6 +187,8 @@
     font-family: var(--bodytext-2);
 }
 
+
+
 @media screen and (max-width: 420px) and (min-width: 320px) {
     .log-in {
         position: absolute;
@@ -194,6 +197,7 @@
         font-size: var(--bodytext-2-size);
         font-weight: 600;
         color: var(--foundation-orange-normal);
+        text-align: center;
     }
 
     .already-have-an-account-frame {
@@ -203,7 +207,7 @@
     .already-have-an-account {
         position: absolute;
         top: 40px;
-        /* left: calc(50% - 139px); */
+        left: calc(15% - 139px);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -211,16 +215,14 @@
         gap: 16px 0;
     }
 
-        .get-started-container {
-            right: calc(50% - 447px);
-            font-size: 24px;
-            font-weight: 500;
-            line-height: 28.8px;
-            margin: 0;
-            padding: 0;
-            
-            
-        }
+    .get-started-container {
+        right: calc(50% - 447px);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28.8px;
+        margin: 0;
+        padding: 0;
+    }
 
     .characters-icon {
         height: 16.1%;
@@ -269,11 +271,6 @@
     .groupamico-parent {
         gap: 18px 0;
     }
-
-    /* .button7 {
-        position: relative;
-        font-weight: 600;
-    } */
 
     .frame-parent12 {
         display: flex;
@@ -358,5 +355,6 @@
         color: var(--foundation-blue-normal);
         font-family: var(--bodytext-2);
         align-items: center;
+        padding: 5px;
     }
 }

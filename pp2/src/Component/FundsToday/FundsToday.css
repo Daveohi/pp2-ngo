@@ -1,0 +1,164 @@
+.total-fundraised {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 150%;
+    font-weight: 600;
+}
+
+.ellipse-div {
+    width: 4px;
+    position: relative;
+    border-radius: 50%;
+    background-color: var(--foundation-neutral-black-neutral-black-300);
+    height: 4px;
+}
+
+.ellipse-grp {
+    position: absolute;
+    top: 14px;
+    left: 292px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3px 0;
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+}
+
+.total-fundraised-parent {
+    width: 324px;
+    position: relative;
+    height: 24px;
+}
+
+.div-4 {
+    position: relative;
+    line-height: 180%;
+    font-weight: 600;
+}
+
+.icontrending-up {
+    width: 14px;
+    position: relative;
+    height: 14px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.grp {
+    gap: 0 8px;
+}
+
+.framewrapper,
+.grp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.vs-the-last {
+    position: relative;
+    line-height: 150%;
+}
+
+.framewrapper1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: var(--font-size-5xs);
+    color: var(--foundation-neutral-black-neutral-black-300);
+}
+
+
+
+.grp-icon,
+.pa-rent {
+    width: 184px;
+    position: relative;
+    height: 68px;
+}
+
+.grp-icon {
+    width: 112px;
+    height: 66px;
+}
+
+.fundraised-today-parent {
+    width: 323px;
+    position: relative;
+    height: 24px;
+}
+
+.div-7 {
+    position: relative;
+    line-height: 150%;
+    font-weight: 600;
+}
+
+.frameparent8,
+.icon-button2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icon-button2 {
+    border-radius: var(--br-81xl);
+    background-color: #fff5ec;
+    justify-content: center;
+    padding: var(--padding-10xs);
+}
+
+.frameparent8 {
+    justify-content: flex-start;
+    gap: 0 8px;
+    font-size: var(--font-size-3xs);
+    color: var(--foundation-orange-normal);
+}
+
+.parent2 {
+    flex-direction: column;
+    gap: 12px 0;
+}
+
+.frameparent6,
+.frameparent7,
+.parent2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.frameparent7 {
+    flex-direction: row;
+    gap: 0 74px;
+    font-size: var(--font-size-5xl);
+    color: var(--foundation-neutral-black-neutral-black-400);
+}
+
+.frameparent6 {
+    position: absolute;
+    top: 17px;
+    left: 14px;
+    flex-direction: column;
+    gap: 48px 0;
+}
+
+.funds-raised-today {
+    position: absolute;
+    top: 155px;
+    left: 650px;
+    border-radius: var(--br-xs);
+    background-color: var(--base-white);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    border: 0.3px solid var(--foundation-neutral-black-neutral-black-100);
+    box-sizing: border-box;
+    width: 330px;
+    height: 173px;
+    overflow: hidden;
+    color: var(--foundation-neutral-black-neutral-black-300);
+}

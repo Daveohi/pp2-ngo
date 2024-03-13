@@ -230,28 +230,12 @@
     gap: 24px 0;
 }
 
-.frame-child8,
-.rectangle-div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: var(--br-81xl);
-    background-color: var(--color-gainsboro-100);
-    width: 430px;
-    height: 8px;
-}
-
-.frame-child8 {
-    background-color: var(--color-lightgreen);
-}
-
 .rectangle-parent {
     width: 430px;
     position: relative;
-    background-color: var(--color-gainsboro-100);
+    background-color: green;
     height: 8px;
-    min-width: 398px;
-    max-width: 430px;
+    
 }
 
 .step-2-of {
