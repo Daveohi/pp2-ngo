@@ -1,0 +1,148 @@
+.total-fundraised {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 150%;
+    font-weight: 600;
+}
+
+.ellipse-div {
+    width: 4px;
+    position: relative;
+    border-radius: 50%;
+    background-color: var(--foundation-neutral-black-neutral-black-300);
+    height: 4px;
+}
+
+.ellipse-grp {
+    position: absolute;
+    top: 14px;
+    left: 222px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3px 0;
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+}
+
+.total-fundraised-parent {
+    width: 324px;
+    position: relative;
+    height: 24px;
+}
+
+.div-4 {
+    position: relative;
+    line-height: 180%;
+    font-weight: 600;
+}
+
+.icontrending-up {
+    width: 14px;
+    position: relative;
+    height: 14px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.icon-button {
+    border-radius: var(--br-81xl);
+    background-color: var(--foundation-blue-light);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-10xs);
+}
+
+.grp {
+    gap: 0 8px;
+}
+
+.framewrapper,
+.grp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.vs-the-last {
+    position: relative;
+    line-height: 150%;
+}
+
+.framewrapper1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: var(--font-size-5xs);
+    color: var(--foundation-neutral-black-neutral-black-300);
+}
+
+.frameparent2 {
+    position: absolute;
+    top: 48px;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0 8px;
+    font-size: var(--font-size-3xs);
+    color: var(--foundation-blue-normal);
+}
+
+.grp-icon,
+.pa-rent {
+    width: 144px;
+    position: relative;
+    height: 68px;
+}
+
+.grp-icon {
+    width: 82px;
+    height: 66px;
+}
+
+.framediv,
+.frameparent1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.frameparent1 {
+    flex-direction: row;
+    gap: 0 18px;
+    font-size: var(--font-size-5xl);
+    color: var(--foundation-neutral-black-neutral-black-400);
+}
+
+.framediv {
+    position: absolute;
+    top: 17px;
+    left: 13px;
+    width: 324px;
+    height: 140px;
+    flex-direction: column;
+    gap: 48px 0;
+}
+
+.fundraised {
+    position: absolute;
+    top: 155px;
+    left: 300px;
+    border-radius: var(--br-xs);
+    background-color: var(--base-white);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    border: 0.3px solid var(--foundation-neutral-black-neutral-black-100);
+    box-sizing: border-box;
+    width: 330px;
+    height: 173px;
+    overflow: hidden;
+    color: var(--foundation-neutral-black-neutral-black-300);
+}

@@ -2,8 +2,7 @@ import "../Styles/GetStarted.css";
 import "../Styles/LandingPage.css";
 import Char from "../assets/Images/Characters.png";
 import Morechar from "../assets/Images/amico.png";
-// import Plant from "../assets/Images/plants.png";
-// import Speech from "../assets/Images/speech-bubble.png";
+import {Link} from "react-router-dom"
 
 const CreateAccountDesktop = () => {
   return (
@@ -45,9 +44,7 @@ const CreateAccountDesktop = () => {
                 </div>
               </div>
               <div className="button1">
-                <img className="home-icon1" alt="" src="/home.svg" />
                 <div className="button2">Get Started</div>
-                <img className="home-icon1" alt="" src="/right-arrow.svg" />
               </div>
             </div>
           </div>
@@ -63,11 +60,13 @@ const CreateAccountDesktop = () => {
                     Fund verified NGOs
                   </div>
                 </div>
-              </div>
-              <div className="button14">
-                {/* <img className="home-icon1" alt="" src="/home.svg" /> */}
-                <div className="button7">Get Started</div>
-                {/* <img className="home-icon1" alt="" src="/right-arrow.svg" /> */}
+                <Link
+                  className="button14"
+                  to="/signupngo"
+                  style={{ textDecoration: "none" }}
+                >
+                  <div className="button7">Get Started</div>
+                </Link>
               </div>
             </div>
           </div>

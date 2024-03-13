@@ -1,0 +1,31 @@
+.home-i {
+    display: none;
+}
+
+.dropdown-icon,
+.home-i {
+    width: 18px;
+    position: relative;
+    height: 18px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.button-btn {
+    position: absolute;
+    top: 94.5px;
+    left: 1168.5px;
+    border-radius: var(--br-5xs);
+    border: 1.5px solid var(--foundation-blue-normal);
+    box-sizing: border-box;
+    height: 43px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-mini) var(--padding-xl);
+    gap: 0 8px;
+    font-size: var(--text-lg-semibold-size);
+    color: var(--color-steelblue);
+}
