@@ -8,6 +8,7 @@ import RevenueTrend from "../Component/RevenueTrend/RevenueTrend";
 import FundRaised from "../Component/FundRaised/FundRaised";
 import FundRaised1 from "../Component/FundRaised1/FundRaised1";
 import FundsToday from "../Component/FundsToday/FundsToday";
+import Table from "../Component/Table/Table";
 
 
 
@@ -23,6 +24,7 @@ const DashboardNGO = () => {
       <FundRaised />
       <FundRaised1 />
       <FundsToday />
+      <Table />
     </div>
   );
 };

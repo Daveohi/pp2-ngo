@@ -1,0 +1,49 @@
+.weite-your-organisations {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+}
+
+input {
+    width: 95%;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.active-projects {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 180%;
+    font-weight: 600;
+}
+
+.text-box3 {
+    position: absolute;
+    top: 503px;
+    left: 832px;
+    width: 460px;
+    height: 276px;
+}
+
+.text-box3 {
+    top: 48px;
+    left: 0;
+    border-radius: var(--br-5xs);
+    background-color: var(--base-white);
+    border: 0.5px solid var(--foundation-neutral-black-neutral-black-200);
+    box-sizing: border-box;
+    height: 48px;
+    overflow: hidden;
+    font-size: var(--font-size-base);
+    color: var(--foundation-neutral-black-neutral-black-300);
+}
+
+.misson-box3 {
+    position: absolute;
+    top: 819px;
+    left: 832px;
+    width: 460px;
+    height: 96px;
+}

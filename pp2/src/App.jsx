@@ -4,9 +4,12 @@ import GetStarted from "./Pages/GetStarted";
 import SignUpNgoPage from "./Pages/SignUpNGO";
 import SignUpNgo from "./Pages/SignUpNgo2";
 import Dashboard from "./Pages/Dashboard";
+import Portfolio from "./Pages/Portfolio";
+import Donation from "./Pages/Donation";
 
 
 function App() {
+  
   return (
     // <LandingPage />
     <BrowserRouter>
@@ -16,6 +19,8 @@ function App() {
         <Route path="/signupngo" element={<SignUpNgoPage />} />
         <Route path="/signupngo2" element={<SignUpNgo />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/donation" element={<Donation />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,0 +1,35 @@
+textarea {
+    width: 90%;
+    border: none;
+    outline: none;
+    height: 95%;
+    background: none;
+}
+
+.weite-your-organisations {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+}
+
+.text-box1 {
+    position: absolute;
+    width: 460px;
+}
+
+.active-projects {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 180%;
+    font-weight: 600;
+}
+
+.misson-box2,
+.text-box3 {
+    position: absolute;
+    top: 503px;
+    left: 832px;
+    width: 460px;
+    height: 276px;
+}
