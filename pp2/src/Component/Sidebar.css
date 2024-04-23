@@ -4,7 +4,7 @@
     left: 3px;
     border-radius: var(--br-11xl);
     width: 250px;
-    height: 1013.6px;
+    height: 1212px;
 }
 
 .fund-ngo {
@@ -272,8 +272,9 @@
     bottom: 0;
     background-color: var(--foundation-blue-dark);
     box-shadow: 4px 0 20px rgba(0, 0, 0, 0.05);
-    height: 1024px;
+    height: 1212px;
     overflow: hidden;
     font-size: var(--text-xs-medium-size);
     color: var(--color-ghostwhite-200);
+    position: relative;
 }

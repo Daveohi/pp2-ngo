@@ -1,0 +1,35 @@
+.button30 {
+    position: relative;
+    font-weight: 600;
+    width: 70%;
+}
+
+.right-arrow-icon {
+    width: 18px;
+    position: relative;
+    height: 18px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: none;
+}
+
+.button4 {
+    position: absolute;
+    top: 1124px;
+    left: 1080px;
+    box-shadow: 0 8px 16px rgba(148, 186, 207, 0.25);
+    border-radius: var(--br-5xs);
+    background-color: var(--foundation-blue-normal);
+    height: 48px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-mini) var(--padding-xl);
+    box-sizing: border-box;
+    gap: var(--gap-5xs);
+    font-size: var(--text-lg-semibold-size);
+    color: var(--foundation-white);
+    width: 15%;
+}
