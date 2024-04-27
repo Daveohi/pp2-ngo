@@ -43,9 +43,13 @@ const CreateAccountDesktop = () => {
                   </div>
                 </div>
               </div>
-              <div className="button1">
+              <Link
+                className="button1"
+                to="/signupngo"
+                style={{ textDecoration: "none" }}
+              >
                 <div className="button2">Get Started</div>
-              </div>
+              </Link>
             </div>
           </div>
           <div className="sponsors">
@@ -60,11 +64,7 @@ const CreateAccountDesktop = () => {
                     Fund verified NGOs
                   </div>
                 </div>
-                <Link
-                  className="button14"
-                  to="/signupngo"
-                  style={{ textDecoration: "none" }}
-                >
+                <Link className="button14">
                   <div className="button7">Get Started</div>
                 </Link>
               </div>

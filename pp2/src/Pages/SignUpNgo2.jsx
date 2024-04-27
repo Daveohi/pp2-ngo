@@ -6,6 +6,7 @@ import { useState } from "react";
 // import Country from "../Component/CountrySelector";
 import "../Styles/SignUpNgo.css"
 import Holdhands from "../assets/Images/Holding Hands.png";
+import { BsArrowBarDown, BsArrowDown, BsArrowRight, BsChevronDown, BsEyeSlash } from "react-icons/bs";
 // import CountrySelector from "../Component/CountrySelector";
 
 const SignUpNgo = memo(() => {
@@ -46,7 +47,7 @@ const SignUpNgo = memo(() => {
       return;
     }
     if (country && state && password && confirmPassword) {
-      navigate("/dashborad");
+      navigate("/userdashboard");
       alert("Sign up successfull");
     } else {
       // Display error message or prevent navigation
@@ -78,7 +79,6 @@ const SignUpNgo = memo(() => {
                   <div className="inputs-1">
                     <label className="country">Country</label>
                     <div className="input-fill">
-                      
                       <input
                         type="text"
                         className="type-your-name"
@@ -86,18 +86,13 @@ const SignUpNgo = memo(() => {
                         value={country}
                         onChange={handleCountry}
                       />
-                     
-                      <img
-                        className="dropdown-icon"
-                        alt=""
-                        src="/dropdown.svg"
-                      />
+
+                      <BsChevronDown className="dropdown-icon" />
                     </div>
                   </div>
                   <div className="inputs-1">
                     <label className="country">State</label>
                     <div className="input-fill">
-                      
                       <input
                         type="text"
                         className="type-your-name"
@@ -105,17 +100,12 @@ const SignUpNgo = memo(() => {
                         value={state}
                         onChange={handleState}
                       />
-                      <img
-                        className="dropdown-icon"
-                        alt=""
-                        src="/dropdown.svg"
-                      />
+                      <BsChevronDown className="dropdown-icon" />
                     </div>
                   </div>
                   <div className="inputs-1">
                     <label className="country">Password</label>
                     <div className="input-fill">
-                      
                       <input
                         type="password"
                         className="type-your-name"
@@ -123,13 +113,12 @@ const SignUpNgo = memo(() => {
                         value={password}
                         onChange={handlePassword}
                       />
-                      <img className="dropdown-icon" alt="" src="/see.svg" />
+                      <BsEyeSlash className="dropdown-icon" />
                     </div>
                   </div>
                   <div className="inputs-1">
                     <label className="country">Confirm Password</label>
                     <div className="input-fill">
-                     
                       <input
                         type="password"
                         className="type-your-name"
@@ -137,7 +126,7 @@ const SignUpNgo = memo(() => {
                         value={confirmPassword}
                         onChange={handleConfirmPassword}
                       />
-                      <img className="see-icon1" alt="" src="/see@2x.png" />
+                      <BsEyeSlash className="dropdown-icon" />
                     </div>
                   </div>
                 </div>
@@ -149,7 +138,7 @@ const SignUpNgo = memo(() => {
               <button className="button13" onClick={handleSignUpClick}>
                 {/* <img className="home-icon7" alt="" src="/home.svg" /> */}
                 <div className="button3">Sign up</div>
-                <img className="home-icon7" alt="" src="/right-arrow.svg" />
+                <BsArrowRight className="home-icon7"  />
               </button>
             </div>
             <div className="already-have-an-container">

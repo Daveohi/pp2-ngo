@@ -23,13 +23,13 @@ const Table = () => {
       <div className="content1">
         <div className="column">
           <div className="table-header-cell">
-            <div className="checkbox" />
+            <input type="checkbox" className="checkbox" />
             <div className="frame-wrapper">
               <div className="text2">Name</div>
             </div>
           </div>
           <div className="table-cell">
-            <div className="checkbox" />
+            <input type="checkbox" className="checkbox" />
             <div className="number">Olivia Rhye</div>
           </div>
           <div className="table-cell">

@@ -1,5 +1,6 @@
 import React from 'react';
 import "../Donations/Donations.css";
+import { BsArrowRight, BsArrowLeft, BsThreeDotsVertical } from 'react-icons/bs';
 
 const Donations = () => {
   return (
@@ -15,10 +16,9 @@ const Donations = () => {
             </div>
           </div>
           <div className="dropdown1">
-            <img
+            <BsThreeDotsVertical
               className="dots-vertical-icon"
-              alt=""
-              src="/dotsvertical.svg"
+              
             />
           </div>
         </div>
@@ -27,49 +27,49 @@ const Donations = () => {
       <div className="content10">
         <div className="column6">
           <div className="table-header-cell6">
-            <div className="checkbox11" />
+            <input type="checkbox" className="checkbox11" />
             <div className="table-header6">
               <div className="text63">Name</div>
             </div>
           </div>
           <div className="table-cell60">
-            <div className="checkbox11" />
+            <input type="checkbox" className="checkbox11" />
             <div className="text62">Olivia Rhye</div>
           </div>
           <div className="table-cell60">
-            <div className="checkbox11" />
+            <input type="checkbox" className="checkbox11" />
             <div className="text62">Phoenix Baker</div>
           </div>
           <div className="table-cell60">
-            <div className="checkbox11" />
+            <input type="checkbox" className="checkbox11" />
             <div className="text62">Lana Steiner</div>
           </div>
           <div className="table-cell60">
-            <div className="checkbox11" />
+            <input type="checkbox" className="checkbox11" />
             <div className="text62">Demi Wilkinson</div>
           </div>
           <div className="table-cell60">
-            <div className="checkbox11" />
+            <input type="checkbox" className="checkbox11" />
             <div className="text62">Candice Wu</div>
           </div>
           <div className="table-cell60">
-            <div className="checkbox11" />
+            <input type="checkbox" className="checkbox11" />
             <div className="text62">Natali Craig</div>
           </div>
           <div className="table-cell60">
-            <div className="checkbox11" />
+            <input type="checkbox" className="checkbox11" />
             <div className="text62">Drew Cano</div>
           </div>
           <div className="table-cell60">
-            <div className="checkbox11" />
+            <input type="checkbox" className="checkbox11" />
             <div className="text62">Orlando Diggs</div>
           </div>
           <div className="table-cell60">
-            <div className="checkbox11" />
+            <input type="checkbox" className="checkbox11" />
             <div className="text62">Andi Lane</div>
           </div>
           <div className="table-cell69">
-            <div className="checkbox11" />
+            <input type="checkbox" className="checkbox11" />
             <div className="text62">Kate Morrison</div>
           </div>
         </div>
@@ -292,7 +292,7 @@ const Donations = () => {
       <div className="pagination1">
         <div className="button-wrap2">
           <div className="buttonsbutton2">
-            <img className="dots-vertical-icon" alt="" src="/arrowleft.svg" />
+            <BsArrowLeft className="dots-vertical-icon" />
             <div className="text-padding2">
               <div className="text119">Previous</div>
             </div>
@@ -340,7 +340,7 @@ const Donations = () => {
             <div className="text-padding2">
               <div className="text119">Next</div>
             </div>
-            <img className="dots-vertical-icon" alt="" src="/arrowright.svg" />
+            <BsArrowRight className="dots-vertical-icon"  />
           </div>
         </div>
       </div>

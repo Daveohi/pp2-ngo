@@ -12,6 +12,7 @@ import {
 } from "react-icons/bs";
 import VECTOR from "../assets/Images/Vector 15.png";
 import HELP from "../assets/Images/mdi_help-outline.png";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -41,19 +42,34 @@ const Sidebar = () => {
           <div className="manage">MANAGE</div>
           <div className="manage-frame1">
             <div className="dashboard1">
-              <div className="icround-dashboard-parent">
+              <Link
+                className="icround-dashboard-parent"
+                ClassName="active"
+                to="/dashboard"
+                style={{ textDecoration: "none" }}
+              >
                 <BsColumnsGap className="fluentboard-20-filled-icon" />
                 <div className="dashboard2">Dashboard</div>
-              </div>
+              </Link>
             </div>
-            <div className="campaigns">
+            <Link
+              className="campaigns"
+              ClassName="active"
+              to="/portfolio"
+              style={{ textDecoration: "none" }}
+            >
               <BsMegaphone className="fluentboard-20-filled-icon" />
               <div className="portfolio">Portfolio</div>
-            </div>
-            <div className="campaigns">
+            </Link>
+            <Link
+              className="campaigns"
+              activeClassName="active"
+              to="/donation"
+              style={{ textDecoration: "none" }}
+            >
               <BsCoin className="fluentboard-20-filled-icon" />
               <div className="donations">Donations</div>
-            </div>
+            </Link>
             <div className="campaigns">
               <BsFileText className="fluentboard-20-filled-icon" />
               <div className="reports">Reports</div>
@@ -65,10 +81,15 @@ const Sidebar = () => {
         <div className="account-container">
           <div className="account-here">ACCOUNT MANAGEMENT</div>
           <div className="framecontainer">
-            <div className="campaigns">
+            <Link
+              className="campaigns"
+              activeClassName="active"
+              to="/accountpage"
+              style={{ textDecoration: "none" }}
+            >
               <BsGear className="fluentboard-20-filled-icon" />
               <div className="donations">Account settings</div>
-            </div>
+            </Link>
             <div className="campaigns">
               <BsShieldLock className="fluentboard-20-filled-icon" />
               <div className="donations">Security</div>

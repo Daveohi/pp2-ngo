@@ -47,7 +47,7 @@ const Mediagallery = () => {
         </div>
       ))}
 
-      <div className="button2">
+      <div className="button-2">
         <input type="file" multiple onChange={handleFileChange} />
         <div onClick={handleUpload} className="button3">
           Insert images

@@ -65,7 +65,7 @@
 }
 
 .card-header1 {
-    width: 1087px;
+    width: 1005px;
     background-color: var(--base-white);
     display: flex;
     flex-direction: column;
@@ -362,7 +362,7 @@
 }
 
 .pagination1 {
-    width: 1085px;
+    width: 1000px;
     border-top: 1px solid var(--gray-200);
     flex-direction: row;
     align-items: center;
